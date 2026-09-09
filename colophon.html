@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Colophon document detailing the architecture and development of the Coffee Boom Samal-12 website.">
+  <meta name="author" content="Timur Naumov">
+  <title>Colophon — Coffee Boom Samal-12 Website Development</title>
+</head>
+<body>
+  <!-- Page author: Timur Naumov -->
+
+  <header>
+    <h1>Coffee Boom — Samal-12</h1>
+    <p>Official website for the coffee shop branch in Samal-12 microdistrict</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Samal Branch</a></li>
+      <li><a href="menu.html">Our Menu</a></li>
+      <li><a href="order.html">Pre-Order</a></li>
+      <li><a href="feedback.html">Guest Feedback</a></li>
+      <li><a href="colophon.html">Colophon</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Website Architecture and Construction</h2>
+
+      <!-- Semantic rationale: The article element is chosen here because this technical overview forms an independent composition with standalone value. -->
+      <article>
+        <h3>Technical Standards</h3>
+        <p>
+          This website was created as part of an academic web technologies course for <strong>Coffee Boom</strong> in Samal-12, Astana. Our core objective is establishing a rigorous semantic skeleton without external stylesheets or client-side scripts. We avoided site builders to guarantee maximum accessibility and search engine readability.
+        </p>
+        <p>
+          Content is structured using <abbr title="HyperText Markup Language 5">HTML5</abbr> landmark elements. We maintain strict heading levels, eliminate presentation wrappers, and supply metadata validated against <abbr title="World Wide Web Consortium">W3C</abbr> standards.
+        </p>
+      </article>
+
+      <article>
+        <h3>Tooling and Syntax Verification</h3>
+        <p>
+          All pages were authored in Visual Studio Code and tracked using Git. Files are saved via <kbd>Ctrl</kbd> + <kbd>S</kbd> (or <kbd>Cmd</kbd> + <kbd>S</kbd> on macOS).
+        </p>
+
+        <!-- Semantic rationale: The pre and code combination preserves literal indentation and whitespace, essential for displaying code syntax. -->
+        <p>Core semantic document structure used across our branch website:</p>
+        <pre><code>&lt;header&gt;
+  &lt;h1&gt;Coffee Boom Samal-12&lt;/h1&gt;
+&lt;/header&gt;
+&lt;main&gt;
+  &lt;section&gt;Branch Content&lt;/section&gt;
+&lt;/main&gt;</code></pre>
+
+        <!-- Semantic rationale: The samp tag represents verbatim terminal output from our validator tool, distinguishing compiler output from user input. -->
+        <p>Running the W3C automated syntax validator produces this benchmark:</p>
+        <p><samp>Document checking completed. No errors or warnings to show.</samp></p>
+
+        <!-- Semantic rationale: The span element is applied solely to label an arbitrary build version where no semantic phrasing tag like strong or mark is applicable. -->
+        <p>Build status: <span>v1.0-alpha (unformatted build)</span></p>
+      </article>
+    </section>
+
+    <hr>
+
+    <aside>
+      <h2>Typography Advisory</h2>
+      <p>
+        No <abbr title="Cascading Style Sheets">CSS</abbr> stylesheets are attached.<br>
+        All margins and typography are rendered by browser defaults.
+      </p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Coffee Boom, Astana, Samal-12 (Astana Tower) &bull; Tel: <a href="tel:+77073130202">+7 (707) 313-02-02</a></p>
+    <p>&copy; 2026 Coffee Boom Samal-12. All rights reserved. Author: Timur Naumov.</p>
+  </footer>
+</body>
+</html>
